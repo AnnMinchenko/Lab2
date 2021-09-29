@@ -21,5 +21,49 @@ namespace Lab2
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+
+            
+            var text = textNumbers.Text;
+            var numbersStr = text.Split(" ");
+            int[] arr = numbersStr.Select(x => int.Parse(x)).ToArray();
+
+
+
+
+            MessageBox.Show(Logic.Ascending(arr));
+        }
+
+        private void textNumbers_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public class Logic
+    {
+        public static string Ascending(int[] numbers)
+        {
+            string result = "По возрастанию";
+            int a = 0;
+            int lastelem = numbers[a];
+
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                bool b = (lastelem >= numbers[i]);
+                if (b)
+                {
+                    result = "Не по возрастанию";
+                    break;
+                }
+                lastelem = numbers[i];
+            }
+
+            return result;
+        }
     }
 }
