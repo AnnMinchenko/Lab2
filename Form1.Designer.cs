@@ -36,40 +36,43 @@ namespace Lab2
             // 
             // textNumbers
             // 
-            this.textNumbers.Location = new System.Drawing.Point(12, 47);
+            this.textNumbers.Location = new System.Drawing.Point(21, 56);
+            this.textNumbers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textNumbers.Name = "textNumbers";
-            this.textNumbers.Size = new System.Drawing.Size(395, 23);
+            this.textNumbers.Size = new System.Drawing.Size(451, 27);
             this.textNumbers.TabIndex = 0;
             this.textNumbers.TextChanged += new System.EventHandler(this.textNumbers_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 19);
+            this.label1.Location = new System.Drawing.Point(68, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 15);
+            this.label1.Size = new System.Drawing.Size(356, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Введите последовательность чисел через пробел";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 89);
+            this.button1.Location = new System.Drawing.Point(115, 119);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(395, 24);
+            this.button1.Size = new System.Drawing.Size(256, 32);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Проверить последовательность на возрастание";
+            this.button1.Text = "Проверить на возрастание";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 149);
+            this.ClientSize = new System.Drawing.Size(488, 190);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textNumbers);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
