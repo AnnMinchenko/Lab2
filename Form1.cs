@@ -15,6 +15,8 @@ namespace Lab2
         public Form1()
         {
             InitializeComponent();
+
+            textNumbers.Text = Properties.Settings.Default.text.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,6 +45,8 @@ namespace Lab2
                 return; 
             }
 
+            Properties.Settings.Default.text = text;
+            Properties.Settings.Default.Save();
 
             MessageBox.Show(Logic.Ascending(arr));
         }
