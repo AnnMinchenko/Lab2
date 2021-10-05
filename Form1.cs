@@ -26,13 +26,22 @@ namespace Lab2
         {
 
 
+            String text;
+            String[] numbersStr;
+            int[] arr;
 
-            
-            var text = textNumbers.Text;
-            var numbersStr = text.Split(" ");
-            int[] arr = numbersStr.Select(x => int.Parse(x)).ToArray();
+            try
+            {
+                text = textNumbers.Text;
+                numbersStr = text.Split(" ");
+                arr = numbersStr.Select(x => int.Parse(x)).ToArray();
+            }
 
-
+            catch (FormatException)
+            {
+                MessageBox.Show("Некорректный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; 
+            }
 
 
             MessageBox.Show(Logic.Ascending(arr));
