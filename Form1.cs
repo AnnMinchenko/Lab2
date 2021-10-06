@@ -35,7 +35,7 @@ namespace Lab2
             try
             {
                 text = textNumbers.Text;
-                numbersStr = text.Split(" ");
+                numbersStr = text.Trim().Split(" ");
                 arr = numbersStr.Select(x => int.Parse(x)).ToArray();
             }
 
@@ -48,7 +48,8 @@ namespace Lab2
             Properties.Settings.Default.text = text;
             Properties.Settings.Default.Save();
 
-            MessageBox.Show(Logic.Ascending(arr));
+            var res = Logic.Ascending(arr);
+            MessageBox.Show(res);
         }
 
         private void textNumbers_TextChanged(object sender, EventArgs e)

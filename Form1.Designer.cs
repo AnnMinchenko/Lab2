@@ -55,7 +55,7 @@ namespace Lab2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(115, 119);
+            this.button1.Location = new System.Drawing.Point(115, 107);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(256, 32);
@@ -68,7 +68,7 @@ namespace Lab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 190);
+            this.ClientSize = new System.Drawing.Size(488, 162);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textNumbers);
